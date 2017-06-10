@@ -18,8 +18,8 @@ When facing an unexpected behavior from any kind, it is RECOMMENDED to inspect r
 ## Usages
 
 ## Copyright and license
-[![GNU General Public License v3] (http://img.shields.io/badge/license-GNU%20v3-blue.svg?style=flat)]
-(https://github.com/Eido95/dynamic-users-management-system/blob/master/LICENSE)
+
+[![GNU General Public License v3] (http://img.shields.io/badge/license-GNU%20v3-blue.svg?style=flat)](https://github.com/Eido95/dynamic-users-management-system/blob/master/LICENSE)
 
 ## Contact
 #### Eido Askayo

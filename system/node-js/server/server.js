@@ -2,9 +2,7 @@
 
 const Http = require('http');
 const Fs = require('fs');
-
-const hostname = "127.0.0.1";
-const port = "8081";
+const Settings = require('./serversettings');
 
 const server = Http.createServer((request, response) => {
   console.log("Received: " + request.method + " " + request.url + " " + request.httpVersion);
@@ -15,8 +13,8 @@ const server = Http.createServer((request, response) => {
   }
 });
 
-server.listen(port, hostname, () => {
-  console.log("Server listening at http://" + hostname + ":" + port + "...");
+server.listen(Settings.serverPort, Settings.serverIp, () => {
+  console.log("Server listening at http://" + Settings.serverIp + ":" + Settings.serverPort + "...");
 });
 
 // Handles GET messages

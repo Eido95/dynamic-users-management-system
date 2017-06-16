@@ -41,9 +41,16 @@ function onGetRequested(request, response) {
       response.write(data);
       response.end();
     });
+  } else if (request.url == "/favicon.ico" && isAcceptingContent(request, "image/*")) {
+    Fs.readFile("../../favicon.ico", (error, data) => {
+      response.statusCode = 200;
+      response.setHeader('Content-Type', "image/ico");
+      // CONSIDER: handle 'Accept-Encoding' of 'gizp' file compression, attempt to copress the image and send
+      // it as compressed file
+      response.write(data); // probably byte array filled with raw image data
+      response.end();
+    });
   } else {
-    // FIXME: request.url dissapears when attempting to get it for /favicon.ico, see why it is
-    // suddenly become undefined when adding another if abothe this condition.
     console.log("Received different url: " + request.url);
   }
 }

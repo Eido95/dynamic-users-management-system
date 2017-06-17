@@ -2,6 +2,8 @@ const Https = require("https");
 const Fs = require("fs");
 const Settings = require(".././serversettings");
 
+// CONSIDER: Is it secure to commit the private and the public key?
+
 const options = {
   // Generate keys using git bash
   // https://stackoverflow.com/a/21180554/4188683

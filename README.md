@@ -8,6 +8,7 @@ This file SHOULD be read using any Markdown (.md files) viewer for reader conven
 
 - Semantic Versioning for appending to CHANGELOG - http://semver.org/
 - Contributing guidelines - [CONTRIBUTING.md](https://github.com/Eido95/dynamic-users-management-system/blob/master/CONTRIBUTING.md)
+- Project management application - [Trello board](https://trello.com/b/68gzDGNW)
 
 ## Synopsis
 When facing an unexpected behavior from any kind, it is RECOMMENDED to inspect recent logs.
